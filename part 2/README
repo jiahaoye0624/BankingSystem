@@ -1,0 +1,26 @@
+-- In program 2, there are 2 main files:
+-- p2.java
+-- p2.sql
+
+-- p2.java
+-- Implementation file of the P2 class.
+-- It is CLI for the self service bank.
+-- Instead of using BankingSystem.java like p1.java, I move all the database connection code into p2.java
+-- Moreover, p2.java call STP rather than using JDBC queries.
+-- It fulfills all the requirement from the program description.
+        
+        -- Things to remind: The program will ask for "Input anything to Continue...."
+        -- Usage: input any character and hit enter will process.
+        
+        -- The purpose is a buffer and let client has their own time to remember the information that they need, 
+        -- such as Customer ID and Account Number.
+        -- Moreover, the program will return success or fail once the operation processed.
+-- Usage for p2.java:
+        -- java -cp ";./db2jcc4.jar" p2 db.properties
+
+-- p2.sql
+-- Implementation file of the p2 sql procedures
+-- 7 procedures followed the project description
+-- There is an extra procedure call ACCT_IDT.
+        -- ACCT_IDT is an account identity check. 
+        -- To check the account belongs to the customer or not.

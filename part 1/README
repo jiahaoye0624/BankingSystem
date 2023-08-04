@@ -1,0 +1,28 @@
+-- BankingSystem.java
+-- Implementation file of the BankingSystem class.
+-- Besides the 9 required method, there are 4 additional methods to help me finish the Program 1 Assignment.
+        -- returnCustomerID
+        -- It is a helper method that manage to use during creating a new customer.
+        -- the method will return the customer ID to CLI after successfully creating new customer.
+
+        -- returnAccountNum
+        -- It is a helper method that manage to use during opening a new account.
+        -- The method will return the account number to CLI after successfully opening a new account.
+
+        -- checkCustomerLogin
+        -- This is a method that helps to check the login information that client provide.
+        -- Using SQL query to check the equality between the input data and database data.
+        -- Method will return a flag integer variable. 1 is success, 0 is failed.
+
+        -- checkIdentity
+        -- This is a method that helps to check the account owner.
+        -- Method mainly use in closeAccount, withdrawn, and transfer.
+
+-- P1.java
+-- Implementation file of the P1 class.
+-- It is CLI for the self service bank.
+-- It fulfills all the requirement from the program description.
+        -- Things to remind: The program will ask for "Input anything to Continue...."
+        -- Usage: input any character and hit enter will process.
+        -- The purpose is a buffer and let client has their own time to remember the information that they need, 
+        -- such as Customer ID, Account Number, and Account Summary.
